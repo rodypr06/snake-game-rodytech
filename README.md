@@ -10,10 +10,18 @@ A stunning, modern implementation of the classic Snake game featuring realistic 
 
 ## ✨ Features
 
+### 📱 Mobile Optimized (NEW!)
+- **Touch Controls**: Swipe gestures + on-screen directional buttons
+- **Responsive Design**: Adapts to iPhone, iPad, Android phones & tablets
+- **PWA Support**: Install as standalone app on home screen
+- **Safe Area Insets**: Perfect display on notched devices (iPhone X+)
+- **Orientation Support**: Seamless portrait/landscape switching
+- **Performance**: 60 FPS on modern mobile devices
+
 ### 🎮 Gameplay
 - **Progressive Difficulty**: Starts slow (150ms) and speeds up as you score (down to 60ms)
-- **Large Playing Field**: 600x600 pixel canvas with 900 tiles
-- **Smart Controls**: Arrow keys for movement, Space to restart
+- **Responsive Canvas**: Adapts from 320px (mobile) to 600px (desktop)
+- **Smart Controls**: Arrow keys (desktop) or swipe/tap (mobile)
 - **Score Persistence**: High scores saved in browser localStorage
 - **Smooth Animations**: 60 FPS rendering for fluid gameplay
 
@@ -71,8 +79,15 @@ A stunning, modern implementation of the classic Snake game featuring realistic 
 ## 🎯 How to Play
 
 ### Controls
+
+**Desktop**:
 - **Arrow Keys**: Move the snake (Up, Down, Left, Right)
 - **Space**: Restart game after game over
+
+**Mobile**:
+- **Swipe Gestures**: Swipe in any direction to move
+- **Touch Buttons**: Tap directional arrows on screen
+- **Tap to Restart**: Tap "Play Again" button after game over
 
 ### Objective
 - Eat the red apples to grow and score points
@@ -237,15 +252,23 @@ Particle         // Explosion effect particles
 
 ## 📱 Browser Compatibility
 
-### Tested Browsers
+### Desktop Browsers
 - ✅ Chrome/Chromium 90+
 - ✅ Firefox 88+
 - ✅ Safari 14+
 - ✅ Edge 90+
 
+### Mobile Browsers
+- ✅ Safari iOS 14+ (iPhone/iPad)
+- ✅ Chrome Mobile 90+ (Android)
+- ✅ Samsung Internet 14+
+- ✅ Firefox Mobile 88+
+- ✅ Edge Mobile 90+
+
 ### Required Features
 - CSS backdrop-filter (for glassmorphism)
 - HTML5 Canvas API
+- Touch Events API (mobile)
 - LocalStorage API
 - ES6 JavaScript
 
@@ -267,12 +290,15 @@ This project demonstrates:
 This is an educational project, but suggestions are welcome!
 
 ### Ideas for Contribution
-- Mobile touch controls
+- ✅ Mobile touch controls (COMPLETED)
+- ✅ PWA support (COMPLETED)
 - Sound effects and music
 - Additional themes/skins
 - Multiplayer mode
 - Power-ups system
 - Different game modes
+- Haptic feedback (vibration)
+- Service worker (offline play)
 
 ---
 
@@ -309,7 +335,17 @@ For issues or questions:
 
 ## 🔄 Version History
 
-### v1.3.0 (Current)
+### v2.0.0 (Current - Mobile Optimized)
+- ✅ Touch controls (swipe gestures + on-screen buttons)
+- ✅ Responsive canvas (320px-600px adaptive)
+- ✅ PWA support (installable on home screen)
+- ✅ Safe area insets (iPhone X+ notch support)
+- ✅ Orientation handling (portrait/landscape)
+- ✅ Mobile-first CSS architecture
+- ✅ 60 FPS on mobile devices
+- ✅ WCAG 2.1 accessibility compliance
+
+### v1.3.0
 - Modern glassmorphism design
 - Retro grid background
 - RodyTech branding
@@ -334,8 +370,10 @@ For issues or questions:
 
 ## 🎯 Future Roadmap
 
-- [ ] Mobile responsive design
-- [ ] PWA capabilities
+- [x] Mobile responsive design (v2.0.0)
+- [x] PWA capabilities (v2.0.0)
+- [ ] Service Worker (offline play)
+- [ ] Haptic feedback (vibration)
 - [ ] Global leaderboard
 - [ ] Theme selector
 - [ ] Sound effects
